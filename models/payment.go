@@ -2,8 +2,6 @@ package models
 
 import (
 	"time"
-
-	"gorm.io/gorm"
 )
 
 // Payment represents a payment in the queue
@@ -42,8 +40,8 @@ type Payment struct {
 	// example: 2025-09-09T17:04:00Z
 	// format: date-time
 	UpdatedAt time.Time `json:"updated_at"`
-	// Soft delete time (from gorm.Model, nullable)
+	// Soft delete time (nullable)
 	// example: null
 	// format: date-time
-	DeletedAt gorm.DeletedAt `json:"deleted_at" gorm:"index"`
+	DeletedAt *time.Time `json:"deleted_at" gorm:"index"`
 }
