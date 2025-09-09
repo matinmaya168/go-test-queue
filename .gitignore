@@ -1,0 +1,50 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+payment-queue
+
+# Go
+*.test
+*.prof
+vendor/
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Docker
+Dockerfile.local
+*.dockerignore
+
+# Environment variables
+.env
+*.env
+
+# IDEs and editors
+.idea/
+*.iml
+.vscode/
+*.sublime-*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Swagger generated files
+docs/docs.go
+docs/swagger.json
+docs/swagger.yaml
+
+# MySQL data (Docker volume)
+mysql-data/
+
+# Build artifacts
+/bin/
+/pkg/ 
